@@ -2,7 +2,7 @@ const inputRef = document.querySelector('input');
 const boxesRef = document.querySelector('#boxes');
 const renderBtnRef = document.querySelector('button[data-action="render"]');
 const cleanerBtnRef = document.querySelector('button[data-action="destroy"]');
-console.log(cleanerBtnRef);
+
 const colorGenerator = () => {
   const randomColor = '#' + (((1 << 24) * Math.random()) | 0).toString(16);
   return randomColor;
@@ -39,7 +39,7 @@ const renderBtnLauncher = renderBtnRef.addEventListener('click', () => {
   divConstructor(inputRef.valueAsNumber);
 });
 const cleanerBtnLauncher = cleanerBtnRef.addEventListener('click', () => {
-  const a = document.querySelectorAll('#boxes > div').forEach(el => {
+  document.querySelectorAll('#boxes > div').forEach(el => {
     el.remove();
   });
 });
