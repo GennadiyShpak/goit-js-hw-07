@@ -1,3 +1,4 @@
+'use strict';
 const inputRef = document.querySelector('input');
 const boxesRef = document.querySelector('#boxes');
 const renderBtnRef = document.querySelector('button[data-action="render"]');

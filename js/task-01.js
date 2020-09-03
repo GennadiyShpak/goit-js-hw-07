@@ -1,3 +1,4 @@
+'use strict';
 const itemRef = document.querySelectorAll('.item');
 console.log(`В списке ${itemRef.length} категории.`);
 

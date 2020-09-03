@@ -1,3 +1,4 @@
+'use strict';
 const fontSizeHendlerRef = document.querySelector('#font-size-control');
 const spanRef = document.querySelector('#text');
 const counterFontSizes = fontSizeHendlerRef.addEventListener('input', event => {
